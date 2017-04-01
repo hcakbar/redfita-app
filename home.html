@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>ReFita: body jewelry</title>
+       <link rel="shortcut icon" href="images/redfita.ico" type="image/x-icon"/>
+       <link href="css/redfita.css" rel="stylesheet" type="text/css" />
+       <!--<link rel="stylesheet" type="text/css" href="css/cart.css" />-->
+       <!--<link rel="stylesheet" type="text/css" href="css/main.css" />-->
+       <link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+      <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+       <!--<script src="jquery-1.8.2.min.js"></script>-->
+       <!--<script src="jquery-ui-1.9.0.custom.min.js"></script>-->
+       <script type="text/javascript" src="javascript/shopping card add item.js"></script>
+   </head>
+   <body>
+        <!-- Header image and drop down nav menu, consistence throwout all pages, do not edit this -->
+      <div class="container">
+         <header>
+            <a href="home.html" title="Home Page"><img src="images/redfita-header.png" alt="redfita banner" width="950" height="113" border="0"></a><br>
+            <nav>
+                 <ul id="Menu" class="horizontal-menubar">
+                     <li><a href="home.html" class="menubar-submenu">body jewelry</a>
+                         <ul>
+                             <li><a href="earrings.html">earrings</a></li>
+                             <li><a href="nose.html">nose</a></li>
+                             <li><a href="lipsandtongue.html">lips &amp; tongue</a></li>
+                         </ul>
+                     </li>
+                   <li><a href="necklaces.html">necklaces</a></li>
+                    <li> <a href="bracelets.html">bracelets</a>
+                    </li>
+                    <li><a href="rings.html">rings</a></li>
+                     <li><a href="subscribe.html">subscribe</a></li>
+                </ul>
+            </nav>
+            <br>
+            <br>
+         </header>
+
+          <!-- list of items. -->
+          <!-- TODO: add items in the page -->
+          <div id="items">
+              <table width="600px">
+                  <form name="order_form">
+                      <tr>
+                          <td>
+                              <table width="50%" cellspacing="20">
+                                  <tr>
+                                      <td width="45%">
+                                          <h1> jewelry </h1>
+                                          _________________________________________________
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <img src="images/fast-and-furious.jpg" alt="Fast and Furious" border="0" align="left"
+                                               onMouseOver="mouseRollover(this)"
+                                               onMouseOut="mouseOut(this)" />
+
+                                          <div class="item_name">Fast and Furious $14.99</div>
+                                          Product #N101<br />
+                                          New design.
+                                          Quantity:
+                                          <input name="qty0" size="1" value="1" maxlength="1" onfocus="clearValue('0')" />
+                                          <input type="button" value="Add to Cart"
+                                                 onclick="placeOrder('F101','Fast and Furious','14.99',0)" />
+                                          _________________________________________________
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <img src="images/fast-and-furious-rice.jpg" alt="fast-and-furious-rice" border="0" align="left" />
+                                          <div class="item_name">New Fast and Furious rice $19.99</div>
+                                          Product #N102<br />
+                                          The perfect gift.
+                                          Quantity:
+                                          <input name="qty1" size="1" value="1" maxlength="1" onfocus="clearValue('1')" />
+                                          <input type="button" value="Add to Cart"
+                                                 onclick="placeOrder('F202','Fast and Furious rice','19.99',1)" />
+                                          _________________________________________________
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <img src="images/navy-stones-beaded.jpg" alt="navy-stones-beaded" border="0" align="left"
+                                          <div class="item_name">Navy Stones $29.99</div>
+                                          Product #N303<br />
+                                          Great gift.
+                                          Quantity:
+                                          <input name="qty2"  size="1" value="1" maxlength="1" onfocus="clearValue('2')" />
+                                          <input type="button" value="Add to Cart"
+                                                 onclick="placeOrder('F303','Navy Stones','29.99',2)" />
+                                          _________________________________________________
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <img src="images/rhinestones-necklace.jpg" alt="rhinestones-necklace" border="0" align="left" />
+                                          <div class="item_name">New Rhine Stones $17.99</div>
+                                          Product #N404<br />
+                                          New design.
+                                          Quantity:
+                                          <input name="qty3"  size="1" value="1" maxlength="1" onfocus="clearValue('3')" />
+                                          <input type="button" value="Add to Cart"
+                                                 onclick="placeOrder('F404','Rhine Stones','17.99',3)" />
+                                          _________________________________________________
+                                          <h4></h4>
+                                          <input type="button" value="Go to cart" onclick="location.href='display_cart.htm'"/>
+                                          _________________________________________________
+                                      </td>
+                                  </tr>
+                              </table>
+                          </td>
+                      </tr>
+                  </form>
+              </table>
+          </div>
+		<!-- image rollover -->	
+          <script language="javascript">
+            function mouseRollover(myImage) {
+                myImage.src = "images/fast-and-furious-lrg.gif";
+            }
+            function mouseOut(myImage) {
+                myImage.src = "images/fast-and-furious.jpg";
+            }
+        </script>
+
+
+        <!-- Footer images, consistence throwout all pages, do not edit -->
+         <footer>
+             <a href="https://twitter.com/" target="_blank"><img src="images/twitter_icon.png"></a> <!-- image/link for twitter -->
+             <a href="https://www.facebook.com/" target="_blank"> <img src="images/fb_icon.png"></a> <!-- image/facebook -->
+             <a href="mailto:achowd01@baker.edu"? Subject="Hello" target="_top"><img src="images/email_icon.png"></a>  <!-- image/email -->
+             <p><img src="images/redfita_logo.png"> Copyright 2015 - @RedFit</p>
+         </footer>
+      </div>
+        <!-- top nav menu functions, do not edit -->
+      <script type="text/javascript">
+         var MenuBar1 = new Spry.Widget.MenuBar("Menu", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+      </script>
+
+   </body>
+</html>
